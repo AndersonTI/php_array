@@ -2,10 +2,16 @@
 //Uma das formas de iniciar o array
 //$salario = array ()
 
-$notas = [0, 3, 10 ,4];
+$notas = [5, 3, 10 ,4];
 //Sizeof retorna o tamanho do array
 $tamanhoArray = sizeof($notas);
+$soma = 0;
 
-$mediaNotas = ($notas[0] + $notas[1] + $notas[2] + $notas[3]) / $tamanhoArray;
+ for ($i=0; $i < $tamanhoArray; $i++) { 
+     $soma = $soma + $notas[$i];
+ }
+
+ $mediaNotas = $soma /$tamanhoArray;
+
 
 echo "Media do array $mediaNotas";
