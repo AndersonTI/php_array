@@ -1,5 +1,8 @@
 <?php
-require_once 'calculadora.php';
+
+namespace Alura;
+
+require_once 'autoload.php';
 
 //Uma das formas de iniciar o array
 //$salario = array ()
@@ -10,4 +13,3 @@ $myCalc = new calculadora();
 
 //Chamando o metodo calculaMedia passando notas
 $myCalc->caculaMedia($notas);
-
